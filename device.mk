@@ -6,6 +6,7 @@
 #
 
 LOCAL_PATH := device/samsung/a34x
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

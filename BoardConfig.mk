@@ -12,11 +12,11 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
+TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := cortex-a55
+TARGET_CPU_VARIANT_RUNTIME := cortex-a78
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
@@ -33,9 +33,9 @@ TARGET_BOOTLOADER_BOARD_NAME := a34x
 TARGET_NO_BOOTLOADER := true
 
 # Crypto
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
+#TW_INCLUDE_CRYPTO := true
+#TW_INCLUDE_CRYPTO_FBE := true
+#TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # Display
 TARGET_SCREEN_DENSITY := 450
@@ -119,7 +119,7 @@ TW_USE_TOOLBOX := true
 TW_MAX_BRIGHTNESS := 510
 TW_DEFAULT_BRIGHTNESS := 128
 TW_FRAMERATE := 120
-TW_DEVICE_VERSION := xddeath69 (Gabriel Nogueira)
+TW_DEVICE_VERSION := kangingat25
 BOARD_USES_METADATA_PARTITION := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
@@ -130,9 +130,9 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_NO_REBOOT_BOOTLOADER := true
 
 # Crypto
- TW_INCLUDE_CRYPTO := true
- TW_CRYPTO_MNT_POINT := "/data"
- BOARD_USES_METADATA_PARTITION := true
+# TW_INCLUDE_CRYPTO := true
+# TW_CRYPTO_MNT_POINT := "/data"
+# BOARD_USES_METADATA_PARTITION := true
 # TODO Rest of support
- TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt wait,check,formattable,quota,latemount,resize,,reservedsize=256m,checkpoint=block,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption"
- TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+# TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,noauto_da_alloc,errors=panic,inlinecrypt wait,check,formattable,quota,latemount,resize,,reservedsize=256m,checkpoint=block,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption"
+# TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
